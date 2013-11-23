@@ -39,7 +39,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # gem 'unicorn'
 
 group :development do
-  gem 'capistrano', '2.14.2'
+  gem 'capistrano', '2.15.5'
   gem 'guard-rspec', require: false
 end
 
