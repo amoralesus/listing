@@ -1,5 +1,7 @@
 class GirlsController < ApplicationController
   def index
-    render :json => Girl.all
+    @q = Girl.search(params[:q])
+    @girls = @q.result(distinct: true)
+    render :json => { 'resultCount' => @girls.count, 'results' => @girls }
   end
 end

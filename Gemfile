@@ -43,6 +43,8 @@ group :development do
   gem 'guard-rspec', require: false
 end
 
+gem 'ransack'
+
 # Use debugger
 
 group :development, :test do
