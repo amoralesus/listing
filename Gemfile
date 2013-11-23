@@ -61,4 +61,3 @@ end
 gem 'haml-rails'
 
 
-

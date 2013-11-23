@@ -16,4 +16,14 @@ describe GirlsController do
     end
   end
 
+  describe "GET avatar" do
+    it "should render the image of the avatar" do
+      Girl.delete_all
+      girl = Fabricate(:girl, :product_code => 'com.clean.maria')
+      get :avatar, :id => 1238, :product_code => 'com.clean.maria'
+      expect(assigns(:girl).id).to eq(girl.id)
+    end
+
+  end
+
 end
