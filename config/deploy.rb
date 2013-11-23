@@ -1,5 +1,6 @@
 require "bundler/capistrano"
 
+
 set :application, "listing"
 set :repository,  "git@github.com:amoralesus/listing.git"
 set :deploy_to, "/u/apps/listing"
